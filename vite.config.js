@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   //base: '/TayCarr.github.io/'
-  //base: '/'
-  base: '/TayCarr/'
+  base: '/'
+  //base: '/TayCarr/'
 })
