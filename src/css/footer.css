@@ -1,0 +1,20 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(79, 83, 82, 0.3);
+    color: white;
+    text-align: center;
+    width: 100%;
+    /*padding: 4px;*/
+    margin-top: auto;
+
+    /*TODO
+        colour span across
+        click after colour
+        arrange icons
+        change copyright text
+    */
+    
+}

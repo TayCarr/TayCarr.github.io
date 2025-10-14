@@ -3,6 +3,8 @@ import { useState } from 'react'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import EmblaCarousel from './EmblaCarousel'
+import Footer from "./common/footer";
+
 import './css/embla.css'
 
 import Delta1 from './assets/delta1.jpeg'
@@ -35,11 +37,7 @@ function App() {
         <img src={Delta3} alt="Delta3" />
         <img src={Delta4} alt="Delta4" />
       </div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <Footer />
     </>
   )
 }
