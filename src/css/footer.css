@@ -1,14 +1,26 @@
 footer {
+    background-color: rgba(79, 83, 82, 0.3);
+    width: 100%;
+    
+    /*
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(79, 83, 82, 0.3);
+    
     color: white;
     text-align: center;
-    width: 100%;
-    /*padding: 4px;*/
-    margin-top: auto;
+    padding: 4px;
+    width: fill;
+    margin-top: auto;*/
+    
+
+    
+    margin-left: 1000;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the 100% width */
 
     /*TODO
         colour span across
@@ -18,3 +30,8 @@ footer {
     */
     
 }
+
+body {
+    padding: 0%;
+    margin: 0%;
+  }
