@@ -18,8 +18,20 @@ import '../css/footer.css'
 const Footer = () => {
     return(
         <footer>
-            <p className='copyright-text'>Copyright&copy; 2025 Taylor Carreiro </p>
+            <div className='main-container'>
+                
+                <p>Edmonton, Alberta</p>
+                <div className='mail-container'>
+                <a href="mailto:carreirotay@gmail.com.com?subject=Reaching Out">
+                        <img className="em-icon" src={mail} alt="Send me an e-mail" />
+                        <p className='email-address'>carreirotay@gmail</p>
+                </a>
+                </div>
+
+            </div>
+            
             <div className='icon-container'>
+            <p className='copyright-text'>Copyright&copy; 2025 Taylor Carreiro </p>
                 <a href='https://linkedin.com/in/taylor-carreiro-574309367' target='_blank'>
                     <img className="l-icon" src={linkedin} alt="Connect on LinkedIn" />
                 </a>
@@ -38,9 +50,7 @@ const Footer = () => {
                 <a>
                     <img className="t-icon" src={twitch} alt="Watch me on Twitch" />
                 </a>*/}
-                <a href="mailto:carreirotay@gmail.com.com?subject=Reaching Out">
-                    <img className="e-icon" src={mail} alt="Send me an e-mail" />
-                </a>
+                
             </div>
         </footer>
     );

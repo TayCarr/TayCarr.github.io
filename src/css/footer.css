@@ -1,4 +1,9 @@
-footer {
+.main-container {
+    width: 100%;
+    
+    background-color: rgb(132, 148, 163);
+}
+.icon-container {
     background-color: rgba(79, 83, 82, 0.3);
     width: 100%;
     
@@ -30,13 +35,24 @@ footer {
     
 }
 img[class$='-icon'] { /*img[class*='-icon']*/
-    margin: 20px;
+    margin: 0px;
     position: relative;
     transition: transform 0.4s ease;
-    transform: translateY(0px);
+    /*transform: translateY(0px);*/ /*had to take out so that I could shift the linkedin icon down*/
 
 }
 
 img[class$='-icon']:hover {
     transform: translateY(-5px)
   }
+
+.e-icon {
+    position: absolute;
+    transform: translateY(-3px); 
+}
+.g-icon {
+    position: absolute;
+    transform: translateY(-1px); 
+}
+
+
