@@ -23,15 +23,20 @@ footer {
     box-sizing: border-box; /* Ensures padding and border are included in the 100% width */
 
     /*TODO
-        colour span across
         click after colour
         arrange icons
         change copyright text
     */
     
 }
+img[class$='-icon'] { /*img[class*='-icon']*/
+    margin: 20px;
+    position: relative;
+    transition: transform 0.4s ease;
+    transform: translateY(0px);
 
-body {
-    padding: 0%;
-    margin: 0%;
+}
+
+img[class$='-icon']:hover {
+    transform: translateY(-5px)
   }
