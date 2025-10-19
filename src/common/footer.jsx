@@ -8,30 +8,37 @@ import discord from '../assets/media/discord.svg'
 import insta from '../assets/media/insta.svg'
 import twitch from '../assets/media/twitch.svg'
 import mail from '../assets/media/mail.svg'
+import location from '../assets/media/location.svg'
 
 import '../css/footer.css'
 
-//eventually a style here
-//email
 //cv download??
 
 const Footer = () => {
     return(
         <footer>
             <div className='main-container'>
-                
-                <p>Edmonton, Alberta</p>
+                <div className='location-container'>
+                    <img className="location" src={location} alt="Location" />
+                    <p>Edmonton, Alberta</p>
+                </div>
+
                 <div className='mail-container'>
-                <a href="mailto:carreirotay@gmail.com.com?subject=Reaching Out">
+                    <a href="mailto:carreirotay@gmail.com.com?subject=Reaching Out">
                         <img className="em-icon" src={mail} alt="Send me an e-mail" />
+                        
+                    </a>
+                    <a href="mailto:carreirotay@gmail.com.com?subject=Reaching Out">
+                        
                         <p className='email-address'>carreirotay@gmail</p>
-                </a>
+                    </a>
                 </div>
 
             </div>
             
-            <div className='icon-container'>
-            <p className='copyright-text'>Copyright&copy; 2025 Taylor Carreiro </p>
+            <div className='lower-container'>
+                <p className='copyright-text'>Copyright&copy; 2025 Taylor Carreiro </p>
+                <div className='icon-container'>
                 <a href='https://linkedin.com/in/taylor-carreiro-574309367' target='_blank'>
                     <img className="l-icon" src={linkedin} alt="Connect on LinkedIn" />
                 </a>
@@ -50,7 +57,7 @@ const Footer = () => {
                 <a>
                     <img className="t-icon" src={twitch} alt="Watch me on Twitch" />
                 </a>*/}
-                
+                </div>
             </div>
         </footer>
     );

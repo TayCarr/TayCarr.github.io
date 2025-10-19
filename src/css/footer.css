@@ -1,32 +1,35 @@
 .main-container {
     width: 100%;
-    
     background-color: rgb(132, 148, 163);
+    
+    
+}
+.location-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+}
+.mail-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    
+
+}
+.email-address {
+    padding-left: .5rem;
+    transform: translateY(-13px);
 }
 .icon-container {
     background-color: rgba(79, 83, 82, 0.3);
     width: 100%;
-    
-    /*
-    display: flex;
-    flex-direction: column;
+    display: absolute;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
     
-    color: white;
-    text-align: center;
-    padding: 4px;
-    width: fill;
-    margin-top: auto;*/
-    
-
-    
-    margin-left: 1000;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-    box-sizing: border-box; /* Ensures padding and border are included in the 100% width */
-
     /*TODO
         click after colour
         arrange icons
@@ -35,7 +38,9 @@
     
 }
 img[class$='-icon'] { /*img[class*='-icon']*/
-    margin: 0px;
+    margin-left: 20px;
+    margin-top: 8px;
+
     position: relative;
     transition: transform 0.4s ease;
     /*transform: translateY(0px);*/ /*had to take out so that I could shift the linkedin icon down*/
@@ -53,6 +58,11 @@ img[class$='-icon']:hover {
 .g-icon {
     position: absolute;
     transform: translateY(-1px); 
+}
+
+.copyright-text {
+    position: absolute;
+    justify-content: flex-start;
 }
 
 
