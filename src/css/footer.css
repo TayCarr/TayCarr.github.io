@@ -1,68 +1,77 @@
 .main-container {
     width: 100%;
-    background-color: rgb(132, 148, 163);
+    background-color:  #a4a3a0;   
+    font-size: 80%;  
+    padding-top: 1%;
     
-    
+    /*
+        #EDEAE5
+    */
 }
 .location-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    transform: translateY(20%);
     
-
+}
+.location {
+    transform: scale(.8);
+    transform: translateY(-.5rem);
 }
 .mail-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 1rem;
-    
-
+    transform: translateY(10%);
+}
+.mail-container p {
+    padding-left: .5rem;
 }
 .email-address {
-    padding-left: .5rem;
-    transform: translateY(-13px);
+    /*padding-left: 12rem;
+    transform: translateY(-30px);*/
 }
+
 .icon-container {
-    background-color: rgba(79, 83, 82, 0.3);
+    background-color: #fefad4;
     width: 100%;
-    display: absolute;
-    flex-direction: row;
-    align-items: center;
-    
-    /*TODO
-        click after colour
-        arrange icons
-        change copyright text
-    */
+    display: flex;
+    justify-content: flex-end;
+    /*tried to add margin/padding over here to move the flex end to the left
+        so they weren't right against the edge of screen but then it added an over flow
+        solved by adding margin to the last icon, adjust if ever add more links*/
     
 }
 img[class$='-icon'] { /*img[class*='-icon']*/
     margin-left: 20px;
     margin-top: 8px;
-
     position: relative;
     transition: transform 0.4s ease;
     /*transform: translateY(0px);*/ /*had to take out so that I could shift the linkedin icon down*/
-
 }
 
 img[class$='-icon']:hover {
     transform: translateY(-5px)
-  }
-
-.e-icon {
-    position: absolute;
-    transform: translateY(-3px); 
 }
 .g-icon {
     position: absolute;
     transform: translateY(-1px); 
+    margin-right: 40px; /*add margin to the last icon so it pushes them over !!*/   
+    margin-bottom: .1rem;
 }
 
+.e-icon {
+    position: absolute;
+    transform: translateY(3px);    
+}
+
+
 .copyright-text {
+    color: #a4a3a0;
     position: absolute;
     justify-content: flex-start;
+    transform: scale(.8) translateY(130%);
 }
 
 

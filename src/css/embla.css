@@ -1,6 +1,7 @@
 .embla {
     max-width: 48rem;
     margin: auto;
+    padding-top: 6rem;
     --slide-height: 19rem;
     --slide-spacing: 1rem;
     --slide-size: 30%; /*change to scale carousel up and down*/

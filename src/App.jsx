@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
+import Header from "./common/header"
 import Footer from "./common/footer";
 
 import './App.css'
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <Router>
+      <Header />
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path="/Homepage" element={<Homepage />} />

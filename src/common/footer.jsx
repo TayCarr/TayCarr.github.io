@@ -19,26 +19,23 @@ const Footer = () => {
         <footer>
             <div className='main-container'>
                 <div className='location-container'>
-                    <img className="location" src={location} alt="Location" />
                     <p>Edmonton, Alberta</p>
                 </div>
 
                 <div className='mail-container'>
+                    <p>Reach out:  </p>
                     <a href="mailto:carreirotay@gmail.com.com?subject=Reaching Out">
-                        <img className="em-icon" src={mail} alt="Send me an e-mail" />
-                        
-                    </a>
-                    <a href="mailto:carreirotay@gmail.com.com?subject=Reaching Out">
-                        
                         <p className='email-address'>carreirotay@gmail</p>
                     </a>
                 </div>
+                <p>This site is a WIP, don't be surprised if you refresh and it has changed.</p>
 
-            </div>
-            
-            <div className='lower-container'>
                 <p className='copyright-text'>Copyright&copy; 2025 Taylor Carreiro </p>
                 <div className='icon-container'>
+                <a href="mailto:carreirotay@gmail.com.com?subject=Reaching Out">
+                        <img className="em-icon" src={mail} alt="Send me an e-mail" />
+                        
+                    </a>
                 <a href='https://linkedin.com/in/taylor-carreiro-574309367' target='_blank'>
                     <img className="l-icon" src={linkedin} alt="Connect on LinkedIn" />
                 </a>
@@ -57,7 +54,15 @@ const Footer = () => {
                 <a>
                     <img className="t-icon" src={twitch} alt="Watch me on Twitch" />
                 </a>*/}
+                
                 </div>
+                
+
+            </div>
+            
+            <div className='lower-container'>
+                
+               
             </div>
         </footer>
     );
