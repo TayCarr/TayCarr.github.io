@@ -1,5 +1,6 @@
 //footer component
 import React from 'react';
+import { Link, useLocation } from "react-router-dom";
 
 import linkedin from '../assets/media/linkedin.svg'
 import etsy from '../assets/media/etsy.svg'
@@ -16,7 +17,8 @@ import '../css/footer.css'
 
 const Footer = () => {
     return(
-        <footer>
+        <footer id='contact'>
+            
             <div className='main-container'>
                 <div className='location-container'>
                     <p>Edmonton, Alberta</p>
@@ -31,6 +33,7 @@ const Footer = () => {
                 <p>This site is a WIP, don't be surprised if you refresh and it has changed.</p>
 
                 <p className='copyright-text'>Copyright&copy; 2025 Taylor Carreiro </p>
+                
                 <div className='icon-container'>
                 <a href="mailto:carreirotay@gmail.com.com?subject=Reaching Out">
                         <img className="em-icon" src={mail} alt="Send me an e-mail" />
@@ -57,13 +60,9 @@ const Footer = () => {
                 
                 </div>
                 
-
             </div>
             
-            <div className='lower-container'>
-                
-               
-            </div>
+            
         </footer>
     );
 };

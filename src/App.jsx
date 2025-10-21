@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
@@ -10,6 +11,7 @@ import Footer from "./common/footer";
 import './App.css'
 
 import Homepage from './components/Homepage';
+import Painting from './components/Painting'
 
 
 
@@ -21,6 +23,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path="/Homepage" element={<Homepage />} />
+        <Route path="/GlassHanded" element={<Painting />} />
 
       </Routes>
       <Footer />
