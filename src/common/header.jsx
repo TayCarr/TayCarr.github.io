@@ -8,7 +8,7 @@ import '../css/header.css'
 const goHome = () => {
     navigate("/");
 };
-const Footer = () => {
+const Header = () => {
     return(
         <nav className="navbar">
       <div className="navbar-container container">
@@ -20,8 +20,8 @@ const Footer = () => {
           </div>
           <ul className="menu-items">
               <li><Link to="/">Home</Link></li>
-              {/*<li><a href="#about">Delta</a></li>
-              <li><a href="#about">Projects</a></li>*/}
+              {/*<li><a href="#about">Delta</a></li>*/}
+              <li><Link to="/Projects">Projects</Link></li>
               <li><Link to="/GlassHanded">GlassHanded</Link></li>
               {/*<li><a href="#food-menu">Gaming</a></li>*/}
               <li><a href="#contact">Contact</a></li>{/*idk do I want a page? for now just link to footer? */}
@@ -33,4 +33,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default Header;

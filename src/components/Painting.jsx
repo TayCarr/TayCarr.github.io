@@ -102,8 +102,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 const Painting = () => {
     return(
         <div>
-            <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} />
-            {/*TODO figure out how to pass the pictures over and ummm how many pics so can reuse the carousel here... */}
+            <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='default' />
         <h1>GlassHanded</h1>
         {/*can change the classname I had to add it in to get some of the 
             default page characteristics otherwise it was long and ugly */}

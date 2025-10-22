@@ -7,59 +7,13 @@ import {
 } from './EmblaCarouselArrowButtons'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 
-/*import T1 from './assets/T1.jpeg'
-import T2 from './assets/T2.jpeg'
-import T3 from './assets/T3.jpeg'
-import T4 from './assets/T4.jpeg'
-import T5 from './assets/T5.jpeg'
-import T6 from './assets/T6.jpeg'
-import T7 from './assets/T7.jpeg'
-
-const imageList = [
-    {
-        id : 1,
-        src: T1,
-        alt: "Image 1",
-    },
-    {
-        id : 2,
-        src: T2,
-        alt: "Image 2",
-    },
-    {
-        id : 3,
-        src: T3,
-        alt: "Image 3",
-    },
-    {
-        id : 4,
-        src: T4,
-        alt: "Image 4",
-    },
-    {
-        id : 5,
-        src: T5,
-        alt: "Image 5",
-    },
-    {
-        id : 6,
-        src: T6,
-        alt: "Image 6",
-    },
-    {
-        id : 7,
-        src: T7,
-        alt: "Image 7",
-    },
-];*/
-
 const TWEEN_FACTOR_BASE = 0.84
 
 const numberWithinRange = (number, min, max) =>
   Math.min(Math.max(number, min), max)
 
 const EmblaCarousel = (props) => {
-  const { slides, options, imageList } = props
+  const { slides, options, imageList, className } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
   const tweenFactor = useRef(0)
 
@@ -127,7 +81,7 @@ const EmblaCarousel = (props) => {
   }, [emblaApi, tweenOpacity])
 
   return (
-    <div className="embla">
+    <div className={`embla ${className}`} >
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((index) => (

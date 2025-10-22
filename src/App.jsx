@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom/client'
 
 import Header from "./common/header"
 import Footer from "./common/footer";
+import Projects from './components/Projects';
 
 import './App.css'
 
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path="/Homepage" element={<Homepage />} />
+        <Route path="/Projects" element={<Projects />} />
         <Route path="/GlassHanded" element={<Painting />} />
 
       </Routes>

@@ -4,7 +4,15 @@
     padding-top: 6rem;
     --slide-height: 19rem;
     --slide-spacing: 1rem;
-    --slide-size: 30%; /*change to scale carousel up and down*/
+    --slide-size: 35%; /*change to scale carousel up and down*/
+  }
+div[class$='-proj-car']{
+    max-width: 48rem;
+    margin: auto;
+    padding-top: 1rem;
+    --slide-height: 19rem;
+    --slide-spacing: 1rem;
+    --slide-size: 25%; /*too small the slides wont work*/
   }
   .embla__viewport {
     overflow: hidden;
