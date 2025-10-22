@@ -7,7 +7,7 @@ import {
 } from './EmblaCarouselArrowButtons'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 
-import T1 from './assets/T1.jpeg'
+/*import T1 from './assets/T1.jpeg'
 import T2 from './assets/T2.jpeg'
 import T3 from './assets/T3.jpeg'
 import T4 from './assets/T4.jpeg'
@@ -51,7 +51,7 @@ const imageList = [
         src: T7,
         alt: "Image 7",
     },
-];
+];*/
 
 const TWEEN_FACTOR_BASE = 0.84
 
@@ -59,7 +59,7 @@ const numberWithinRange = (number, min, max) =>
   Math.min(Math.max(number, min), max)
 
 const EmblaCarousel = (props) => {
-  const { slides, options } = props
+  const { slides, options, imageList } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
   const tweenFactor = useRef(0)
 
@@ -134,7 +134,7 @@ const EmblaCarousel = (props) => {
             <div className="embla__slide" key={index}>
               <img
                 className="embla__slide__img"
-                src={imageList[index].src}
+                src={props.imageList[index].src}
                 alt="Your alt text"
               />
             </div>

@@ -10,15 +10,15 @@ const goHome = () => {
 };
 const Footer = () => {
     return(
-        <nav class="navbar">
-      <div class="navbar-container container">
+        <nav className="navbar">
+      <div className="navbar-container container">
           <input type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
+          <div className="hamburger-lines">
+              <span className="line line1"></span>
+              <span className="line line2"></span>
+              <span className="line line3"></span>
           </div>
-          <ul class="menu-items">
+          <ul className="menu-items">
               <li><Link to="/">Home</Link></li>
               {/*<li><a href="#about">Delta</a></li>
               <li><a href="#about">Projects</a></li>*/}
@@ -26,7 +26,7 @@ const Footer = () => {
               {/*<li><a href="#food-menu">Gaming</a></li>*/}
               <li><a href="#contact">Contact</a></li>{/*idk do I want a page? for now just link to footer? */}
           </ul>
-          <h1 class="logo">TC</h1>
+          <h1 className="logo">TC</h1>
       </div>
   </nav>
 
