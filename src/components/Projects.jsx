@@ -58,11 +58,19 @@ const Projects = () => {
             </div>
             <div className='shark-container'>
                 <h2>Shark Game</h2>
-                <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='lumo-proj-car'/>
+                <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='shark-proj-car'/>
+            </div>
+            <div className='read-container'>
+                <h2>Extra Readings (work on name?)</h2>
+                <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='read-proj-car'/>
+            </div>
+            <div className='dog-container'>
+                <h2>Dog Daycare Portal</h2>
+                <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='dog-proj-car'/>
             </div>
             
-            <h2>Dog Daycare Portal</h2>
-            <h2>Extra Readings (work on name?)</h2>
+            
+            
         </div>
 
     );
