@@ -2,17 +2,19 @@
     max-width: 48rem;
     margin: auto;
     padding-top: 6rem;
-    --slide-height: 19rem;
+    --slide-height: 100%;
     --slide-spacing: 1rem;
     --slide-size: 35%; /*change to scale carousel up and down*/
+    --slide-width: 100%
   }
 div[class$='-proj-car']{
-    max-width: 48rem;
-    margin: auto;
+    max-width: 30rem; /*changing the size i like 25-30 maybe will adjust once more are on the page*/
+    margin: auto; /*keeps it in the centre of the page*/
     padding-top: 1rem;
-    --slide-height: 19rem;
+    --slide-height: 100%;/*if the images are all the same size it will auto format to horizontal if a mix it will avg*/
     --slide-spacing: 1rem;
-    --slide-size: 25%; /*too small the slides wont work*/
+    --slide-size: 80%; /*if too small the slides wont work*/
+    --slide-width: 100%
   }
   .embla__viewport {
     overflow: hidden;
@@ -34,8 +36,10 @@ div[class$='-proj-car']{
     border-radius: 1.8rem;
     display: block;
     height: var(--slide-height);
-    width: 100%;
-    height: 100%;/*added so i get the full picture*/
+    /*width: 100%;*/
+    width: var(--slide-width);
+    /*height: 100%;
+    /*height: 100%;/*added so i get the full picture*/
     object-fit: cover;
   }
   .embla__controls {
