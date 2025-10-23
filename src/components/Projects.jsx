@@ -51,7 +51,7 @@ const Projects = () => {
     return(
         <div>
             <h1 className='project-title'>Project Showcase</h1>
-            <p className='project-bio'>Here you can find examples of projects that I have worked on in the past, or am currently working on. Clicking on a project will bring up further information on that project.</p>
+            <p className='project-bio'>Here you can find examples of projects that I have worked on in the past, or am currently working on. Clicking on a project will bring up further information on that project (give me a minute to do this refer to footer disclaimer).</p>
             <div className='lumo-container'>
                 <h2>LumoLearn</h2>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='lumo-proj-car'/>
