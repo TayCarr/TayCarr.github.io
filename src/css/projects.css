@@ -9,3 +9,10 @@
 .project-title {
     margin-top: 6rem;
 }
+.project-text {
+    /*adjust as needed this will affect ALL p tags*/
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+  }

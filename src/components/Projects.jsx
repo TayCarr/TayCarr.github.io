@@ -78,6 +78,41 @@ const SIMAGELIST = [
    
 ];
 
+import W1 from '../assets/projects/site/w1.png'
+import W2 from '../assets/projects/site/w2.png'
+import W3 from '../assets/projects/site/w3.png'
+import W4 from '../assets/projects/site/w4.png'
+import W5 from '../assets/projects/site/w5.png'
+
+const WIMAGELIST = [
+    {
+        id : 1,
+        src: W1,
+        alt: "Image 1",
+    },
+    {
+        id : 2,
+        src: W2,
+        alt: "Image 2",
+    },
+    {
+        id : 3,
+        src: W3,
+        alt: "Image 3",
+    },
+    {
+        id : 4,
+        src: W4,
+        alt: "Image 4",
+    },
+    {
+        id : 5,
+        src: W5,
+        alt: "Image 5",
+    },
+   
+];
+
 const OPTIONS = { loop: true }
 const SLIDE_COUNT = 5
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
@@ -95,13 +130,17 @@ const Projects = () => {
                 <h2>Diver Game</h2>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={SIMAGELIST} className='diver-proj-car'/>
             </div>
-            <div className='read-container'>
-                <h2>Extra Readings (work on name?)</h2>
-                <p className='project-bio'>Not really any pictures for this as it is just me going through reading those silly little programmer books in my spare time. For the most part it is things I have done previously but I learn new things here and there and it gets me practicing projects when I don't really have an idea on what to do.</p>
+            <div className='site-container'>
+                <h2>This Site!</h2>
+                <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={WIMAGELIST} className='dog-proj-car'/>
             </div>
             <div className='dog-container'>
                 <h2>Dog Daycare Portal</h2>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='dog-proj-car'/>
+            </div>
+            <div className='read-container'>
+                <h2>Code Books</h2>
+                <p className='project-text'>Not really any pictures for this as it is just me going through reading those silly little programmer books in my spare time. For the most part it is things I have done previously but I learn new things here and there and it gets me practicing projects when I don't really have an idea on what to do. I hope to one day have a repo with code from a variety of books, it is just a silly little thing I enjoy doing.</p>
             </div>
             
             
