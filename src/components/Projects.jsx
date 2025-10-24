@@ -123,7 +123,7 @@ const Projects = () => {
             <h1 className='project-title'>Project Showcase</h1>
             <p className='project-bio'>Here you can find examples of projects that I have worked on in the past, or am currently working on. Clicking on a project will bring up further information on that project (give me a minute to do this refer to footer disclaimer). As I work on more personal projects the hope is to cycle out the school projects and build upon the things I learnt in doing those projects.</p>
             <div className='lumo-container'>
-                <h2>LumoLearn</h2>
+            <li><Link to="/Projects/LumoLearn" >LumoLearn</Link></li>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='lumo-proj-car'/>
             </div>
             <div className='diver-container'>
