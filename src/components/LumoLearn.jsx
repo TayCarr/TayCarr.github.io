@@ -8,6 +8,7 @@ import '../css/projects.css'
 
 
 function LumoLearn() {
+    var lumolink = <a href="https://viewport.ca/ateam4/" target='_blank'>LumoLearn</a>;
   return (
     <div>
      
@@ -21,7 +22,7 @@ function LumoLearn() {
       terms they would understand, it forced me to be honest about my capabilities and what could be accomplished in a short amount of time and overall I felt my confidence grow with each team meeting or supervisor meeting. As much as I hate presenting I found myself speaking with confidence about the work I had done.
       I absolutely loved working on this project! It was my first time doing any sort of web development or doing a semi self guided project, even after all the stress I would do it again, except maybe implementing all the css in about a week that made me dizzy. Thank you to my amazing supervisors, I hope to see this project grow even more. </p>
 
-      <p className='project-bio'>If you would like to check out LumoLearn it is still live, you can "login" with anything or sign up with anything data is not being collected and stored, the database currently only holds a word bank for the games. The pages can get a little silly if you are not on a tablet.</p>
+      <p className='project-bio'>If you would like to check out {lumolink} it is still live, you can "login" with anything or sign up with anything data is not being collected and stored, the database currently only holds a word bank for the games. The pages can get a little silly if you are not on a tablet.</p>
 
       
     </div>
