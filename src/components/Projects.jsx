@@ -134,10 +134,6 @@ const Projects = () => {
                 <h2>This Site!</h2>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={WIMAGELIST} className='dog-proj-car'/>
             </div>
-            <div className='dog-container'>
-                <h2>Dog Daycare Portal</h2>
-                <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='dog-proj-car'/>
-            </div>
             <div className='read-container'>
                 <h2>Code Books</h2>
                 <p className='project-text'>Not really any pictures for this as it is just me going through reading those silly little programmer books in my spare time. For the most part it is things I have done previously but I learn new things here and there and it gets me practicing projects when I don't really have an idea on what to do. I hope to one day have a repo with code from a variety of books, it is just a silly little thing I enjoy doing.</p>
