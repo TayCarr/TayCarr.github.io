@@ -148,7 +148,12 @@ function LumoLearn() {
       <div className="showcase-container">
         <h1 className="main-title" >LumoLearn</h1>
         <p className='main-desc'>Web based learning for children with Dyslexia.</p>
+        <div className='btn-container'>
         <a href="https://viewport.ca/ateam4/" target='_blank' className="btn btn-link">Visit</a>
+        <a href="https://github.com/ConcernedMotley/CMPT496-Dyslexia-App" target='_blank' className="btn btn-link">Github</a>
+        <a href="https://drive.google.com/file/d/1T2t6gREiRYx4cKGbZu4N1l9sFqL4h-i0/view?usp=sharing" target='_blank' className="btn btn-link">Video</a>
+        <a href="https://docs.google.com/document/d/19Yz3YItoCa8esZX9sJQI5_zgR7XDsVOdCFVbJ1mkwFI/edit?usp=sharing" target='_blank' className="btn btn-link">Report</a>
+        </div>
       </div>
     </div>
      
