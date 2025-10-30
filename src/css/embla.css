@@ -16,6 +16,15 @@ div[class$='-proj-car']{
     --slide-size: 80%; /*if too small the slides wont work*/
     --slide-width: 100%
   }
+  div[class$='inner-proj']{
+    max-width: 40rem; /*changing the size i like 25-30 maybe will adjust once more are on the page*/
+    margin: auto; /*keeps it in the centre of the page*/
+    padding-top: 1rem;
+    --slide-height: 100%;/*if the images are all the same size it will auto format to horizontal if a mix it will avg*/
+    --slide-spacing: 1rem;
+    --slide-size: 100%; /*if too small the slides wont work*/
+    --slide-width: 100%
+  }
   .embla__viewport {
     overflow: hidden;
   }
