@@ -5,6 +5,7 @@ import EmblaCarousel from '../EmblaCarousel'
 
 import '../css/embla.css'
 import '../css/projects.css'
+import BGIMG from '../assets/projects/lumo/bgimg.png'
 
 import L1 from '../assets/projects/lumo/l1.png'
 import L2 from '../assets/projects/lumo/l2.png'
@@ -144,7 +145,7 @@ function LumoLearn() {
   return (
     
     <div>
-        <div className="showcase-area" id="showcase" style={{ backgroundImage: `url(${L1})`}}>
+        <div className="showcase-area" id="showcase" style={{ backgroundImage: `url(${BGIMG})`}}>
       <div className="showcase-container">
         <h1 className="main-title" >LumoLearn</h1>
         <p className='main-desc'>Web based learning for children with Dyslexia.</p>

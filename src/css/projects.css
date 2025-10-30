@@ -100,3 +100,24 @@ a {
       #117964
     */
   }
+
+  @media (max-width: 768px) {
+    .btn {
+        padding: .3em .8em;
+        /*display: inline-block;
+        border-radius: 50px;
+        margin-top: 1em;
+        margin-left: 1em;*/
+    }
+    
+      .showcase-area {
+        padding: 50px;
+        
+        /*
+        background-size: 100% 50%;
+        background-position: center top;*/
+      }
+      .project-bio {
+        
+      }
+  }
