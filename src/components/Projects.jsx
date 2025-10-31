@@ -136,7 +136,7 @@ const Projects = () => {
             </div>
             <div className='read-container'>
                 <li><Link to="/Projects/Books" >Code Books</Link></li>
-                <p className='project-text'>Not really any pictures for this as it is just me going through reading those silly little programmer books in my spare time. For the most part it is things I have done previously but I learn new things here and there and it gets me practicing projects when I don't really have an idea on what to do. I hope to one day have a repo with code from a variety of books, it is just a silly little thing I enjoy doing.</p>
+                <p className='project-text'>Check out the books I have worked through here and there!</p>
             </div>
             
             

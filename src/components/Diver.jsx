@@ -16,8 +16,8 @@ function Shark() {
     <div>
         <div className="showcase-area" id="showcase" style={{ backgroundImage: `url(${BGIMG})`}}>
       <div className="showcase-container">
-        <h1 className="main-title diver" >Diver Game</h1>
-        <p className='main-desc diver'>Simple Scroller Game</p>
+        <h1 className="main-title secondary" >Diver Game</h1>
+        <p className='main-desc secondary'>Simple Scroller Game</p>
         <div className='btn-container'>
         {/*<a href="" target='_blank' className="btn btn-link">Visit</a>****idk !! maybe I host the game so they can play it????*********/}
         <a href="https://github.com/TayCarr/SharkGame" target='_blank' className="btn btn-link">Github</a>

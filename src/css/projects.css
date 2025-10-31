@@ -69,9 +69,13 @@ a {
   .main-desc {
     color: #0d0e10;
   }
-
-  .diver {
+  .secondary {
     color: #dcd1d1;
+  }
+
+  .tertiary {
+    color: #f1828d; /*colour for personal site and books AAAA idk what*/
+    /*color: #588494;*/
   }
 
   .btn {
