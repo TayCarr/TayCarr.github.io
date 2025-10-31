@@ -9,6 +9,9 @@ import Header from "./common/header"
 import Footer from "./common/footer";
 import Projects from './components/Projects';
 import LumoLearn from './components/LumoLearn';
+import Books from './components/Books';
+import Diver from './components/Diver';
+import Site from './components/Site';
 
 import './App.css'
 
@@ -28,6 +31,9 @@ function App() {
         <Route path="/Projects" element={<Projects />} />
         <Route path="/GlassHanded" element={<Painting />} />
         <Route path="/Projects/LumoLearn" element={<LumoLearn />} />
+        <Route path="/Projects/Books" element={<Books />} />
+        <Route path="/Projects/DiverGame" element={<Diver />} />
+        <Route path="/Projects/PersonalSite" element={<Site />} />
         
 
       </Routes>
