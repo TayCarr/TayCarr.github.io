@@ -12,6 +12,19 @@
   padding-left: 4rem;
   padding-right: 4rem;
 }
+.bio-home {
+  /*adjust as needed this will affect ALL p tags*/
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  
+}
+.bio-box {
+  /*TODO idk so i wanna do like a drop shadow border around the paragraph
+    to like break it up a bit or something??*/
+  
+}
 
 
 @keyframes logo-spin {
