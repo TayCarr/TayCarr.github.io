@@ -12,6 +12,7 @@ import LumoLearn from './components/LumoLearn';
 import Books from './components/Books';
 import Diver from './components/Diver';
 import Site from './components/Site';
+import Pixel from './components/Pixel';
 
 import './App.css'
 
@@ -34,6 +35,9 @@ function App() {
         <Route path="/Projects/Books" element={<Books />} />
         <Route path="/Projects/DiverGame" element={<Diver />} />
         <Route path="/Projects/PersonalSite" element={<Site />} />
+        <Route path="/Projects/PixelClock" element={<Pixel />} />
+
+        <Route path="/pixel-clock"  />
         
 
       </Routes>

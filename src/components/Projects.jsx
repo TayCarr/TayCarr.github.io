@@ -43,6 +43,41 @@ const IMAGELIST = [
    
 ];
 
+import P1 from '../assets/projects/pixel/p1.png'
+import P2 from '../assets/projects/pixel/p2.png'
+import P3 from '../assets/projects/pixel/p3.png'
+import P4 from '../assets/projects/pixel/p4.png'
+import P5 from '../assets/projects/pixel/p5.png'
+
+const PIMAGELIST = [
+    {
+        id : 1,
+        src: P1,
+        alt: "Image 1",
+    },
+    {
+        id : 2,
+        src: P2,
+        alt: "Image 2",
+    },
+    {
+        id : 3,
+        src: P3,
+        alt: "Image 3",
+    },
+    {
+        id : 4,
+        src: P4,
+        alt: "Image 4",
+    },
+    {
+        id : 5,
+        src: P5,
+        alt: "Image 5",
+    },
+   
+];
+
 import S1 from '../assets/projects/diver/s1.png'
 import S2 from '../assets/projects/diver/s2.png'
 import S3 from '../assets/projects/diver/s3.png'
@@ -125,6 +160,10 @@ const Projects = () => {
             <div className='lumo-container'>
             <li><Link to="/Projects/LumoLearn" >LumoLearn</Link></li>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='lumo-proj-car'/>
+            </div>
+            <div className='pixel-container'>
+            <li><Link to="/Projects/PixelClock" >Pixel Clock</Link></li>
+                <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={PIMAGELIST} className='pixel-proj-car'/>
             </div>
             <div className='diver-container'>
                 <li><Link to="/Projects/DiverGame" >Diver Game</Link></li>
