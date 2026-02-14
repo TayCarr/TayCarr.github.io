@@ -108,6 +108,19 @@ a {
       #117964
     */
   }
+  /**Styling for Pixel Gallery**/
+  .window-display img{
+    width: 50%; 
+    margin: '5px';
+  }
+  .gallery img{
+    width: 10%; 
+    margin: '5px';
+  }
+  .gallery-conditions img{
+    width: 30%; 
+    margin: '5px';
+  }
 
   @media (max-width: 768px) {
     .btn {
