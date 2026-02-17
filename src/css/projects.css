@@ -121,6 +121,10 @@ a {
     width: 30%; 
     margin: '5px';
   }
+  .gallery-examples img{
+    width: 45%; 
+    margin: '5px';
+  }
 
   @media (max-width: 768px) {
     .btn {

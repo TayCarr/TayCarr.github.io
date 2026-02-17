@@ -38,6 +38,17 @@ const conditions = [
     {id: 6, src: snow, alt: 'Snow fall'},
 
 ]
+import ex1 from '../assets/projects/pixel/p1.png'
+import ex2 from '../assets/projects/pixel/p7.png'
+import ex3 from '../assets/projects/pixel/p5.png'
+import ex4 from '../assets/projects/pixel/p6.png'
+
+const examples = [
+    {id: 1, src: ex1, alt: ''},
+    {id: 2, src: ex2, alt: ''},
+    {id: 3, src: ex3, alt: ''},
+    {id: 4, src: ex4, alt: ' '},
+]
 
 
 function Pixel() {
@@ -49,8 +60,8 @@ function Pixel() {
         <h1 className="main-title secondary" >Pixel Clock</h1>
         <p className='main-desc secondary'>Timezone clock and weather app</p>
         <div className='btn-container'>
-        <a href="https://github.com/TayCarr/pixel-clock" target='_blank' className="btn btn-link">Github</a>
-
+            <a href="https://taycarr.github.io/pixel-clock/" target='_blank' className="btn btn-link">Check it out!</a>
+            <a href="https://github.com/TayCarr/pixel-clock" target='_blank' className="btn btn-link">Github</a>
         </div>
       </div>
     </div>
@@ -60,6 +71,7 @@ function Pixel() {
       
       <div className='window-display'>
         <img src={windowpic}></img>
+        <p className='project-bio'>The window I made where the flower and the weather conditions will change! This was super fun to make, I found a free app for my Ipad and kinda just got to playing around, got a few reference images to use for each component and ya just really had a lot of fun playing around! :)</p>
       </div>
       <div className='gallery'>
         {flowers.map((flower) => (
@@ -83,7 +95,19 @@ function Pixel() {
         <p className='project-bio'>A few weather conditions I animated, here is just a still image of them. I read the API doc to figure out what conditions it may return.</p>
       </div>
 
-      <p className='project-bio'> Potential ToDos include a nicer drop down menu (again I wanted to focus more on the window art so I did the basic), a flower for each month, custom input for city selection (I have a few cities as options but would be nice to allow user to look up a city of their choice but would need some error handling since the api is kinda picky with the city input)</p>
+      <div className='gallery-examples'>
+        {examples.map((example) => (
+            <img 
+                key={example.id}
+                src={example.src}
+                alt={example.alt}
+                />
+        ))}
+        <p className='project-bio'>Some examples of selected cities, I see I need to get some other weather types pictured... anyways I added the text of the city and then the info from the API on current temp and condition description.</p>
+      </div>
+
+      <p className='project-bio'> I do have some potential TODOs that I may implement but ya I am pretty happy with how this went, oh it is with typescript and idk never used it before was similar to react but enough that it was making my head spin a bit. 
+            You can see a little peak of the dropdown menu I did </p>
 
     </div>
     
