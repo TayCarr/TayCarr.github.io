@@ -7,7 +7,9 @@
   }
 
 .project-title {
-    margin-top: 6rem;
+    /*margin-top: 6rem;*/
+    padding-top: 8rem;
+    padding-bottom: 1rem;
 }
 .project-text {
     /*adjust as needed this will affect ALL p tags*/
@@ -32,7 +34,9 @@ a {
   /* ............//// Showcase styling ////......... */
 
 .showcase-area {
-    height: 50vh;
+    
+    width: 100%;
+    min-height: 50vh;
     background: linear-gradient(
         rgba(240, 240, 240, 0.144),
         rgba(255, 255, 255, 0.336)
@@ -41,6 +45,8 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    
   }
   
   .showcase-container {
@@ -64,18 +70,22 @@ a {
     text-transform: uppercase;
     margin-top: 1.5em;
     color: #0d0e10;
+    text-shadow: 3px 3px 5px #74746d;
   }
 
   .main-desc {
     color: #0d0e10;
+    text-shadow: 3px 3px 5px #74746d;
   }
   .secondary {
     color: #dcd1d1;
+    text-shadow: 3px 3px 5px #0b0b0a;
   }
 
   .tertiary {
     color: #f1828d; /*colour for personal site and books AAAA idk what*/
     /*color: #588494;*/
+    text-shadow: 3px 3px 5px #9b9b92;
   }
 
   .btn {
@@ -126,6 +136,21 @@ a {
     margin: '5px';
   }
 
+  /**Styling for Bookcase**/
+  .case{
+    transform: scale(1.5);
+    
+    /*
+    margin: 2rem 2rem 2rem 2rem;
+    
+    margin-top: 9rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    */
+
+    
+  }
+
   @media (max-width: 768px) {
     .btn {
         padding: .3em .8em;
@@ -144,5 +169,8 @@ a {
       }
       .project-bio {
         
+      }
+      .case{
+        max-width: 60%;
       }
   }

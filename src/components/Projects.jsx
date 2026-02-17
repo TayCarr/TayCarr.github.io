@@ -174,8 +174,8 @@ const Projects = () => {
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={WIMAGELIST} className='dog-proj-car'/>
             </div>
             <div className='read-container'>
-                <li><Link to="/Projects/Books" >Code Books</Link></li>
-                <p className='project-text'>Check out the books I have worked through here and there!</p>
+                <li><Link to="/Projects/Books" >Taylor's Library</Link></li>
+                <p className='project-text'>Check out the variety of books I have worked through (for fun)!</p>
             </div>
             
             
