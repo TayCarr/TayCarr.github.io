@@ -136,20 +136,6 @@ a {
     margin: '5px';
   }
 
-  /**Styling for Bookcase**/
-  .case{
-    transform: scale(1.5);
-    
-    /*
-    margin: 2rem 2rem 2rem 2rem;
-    
-    margin-top: 9rem;
-    margin-left: 30rem;
-    margin-right: 30rem;
-    */
-
-    
-  }
 
   @media (max-width: 768px) {
     .btn {
@@ -169,8 +155,5 @@ a {
       }
       .project-bio {
         
-      }
-      .case{
-        max-width: 60%;
       }
   }
