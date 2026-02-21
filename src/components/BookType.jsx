@@ -3,7 +3,7 @@ import BookModal from "./BookModal";
 
 function Book({ book }) {
   const [open, setOpen] = useState(false);
-  console.log(book.spine)
+  
   return (
     <>
       <div
@@ -12,8 +12,8 @@ function Book({ book }) {
       >
         <div className="book-inner">
             
-          <img src={book.spineIMG} className="book-front" />
-          <img src={book.coverIMG} className="book-back" />
+          <img src={book.spineIMG} className="book-spine" />
+          <img src={book.coverIMG} className="book-cover" />
         </div>
 
         {book.status === "completed" && (
