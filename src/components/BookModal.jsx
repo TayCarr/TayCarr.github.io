@@ -3,6 +3,7 @@ function BookModal({ book, close }) {
       <div className="modal-overlay" onClick={close}>
         <div className="modal" onClick={(e) => e.stopPropagation()}>
           <h2>{book.title}</h2>
+          {/*<img src={book.coverIMG} className="book-cover" />*/}
           <p><strong>Author:</strong> {book.author}</p>
           <p><strong>Status:</strong> {book.status}</p>
           <p><strong>Repo Folder:</strong> {book.repoFolder}</p>

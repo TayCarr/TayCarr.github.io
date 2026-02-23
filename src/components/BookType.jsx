@@ -13,12 +13,12 @@ function Book({ book }) {
         <div className="book-inner">
             
           <img src={book.spineIMG} className="book-spine" />
-          <img src={book.coverIMG} className="book-cover" />
+          {/*<img src={book.coverIMG} className="book-cover" />*/}
         </div>
 
-        {book.status === "completed" && (
+        {/*{book.status === "completed" && (
           <span className="badge">✓</span>
-        )}
+        )}*/}
       </div>
 
       {open && <BookModal book={book} close={() => setOpen(false)} />}
