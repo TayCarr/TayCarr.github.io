@@ -17,7 +17,7 @@
     padding-top: 4%;
     padding-bottom: 3%;
 
-    pointer-events: none;
+    /*pointer-events: none;*/
   } 
 
 
@@ -69,16 +69,22 @@
     
   }
   .book-cover {
+    max-width: 75%;
+    
+    
+    /*
+    object-fit: cover;
+    max-height: 80%;
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    object-fit: cover;
+    */
   }
   
-  .book-cover {
+  /*.book-cover {
     transform: rotateY(180deg);
-  }
+  }*/
 
   .badge {
     /*position: absolute;
@@ -118,17 +124,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999;
   }
   
   .modal {
     background: white;
+    margin-top: 5rem;
     padding: 2rem;
     max-width: 500px;
+    max-height: 800px;
     border-radius: 8px;
+    z-index: 11;
+  }
+  .book-details{
+    z-index: 12;
+    padding: .1rem;
+    color: black;
+  }
+  .details-button{
+    margin-top: .8rem;
   }
 
   @media (max-width: 768px) {
       .case{
         max-width: 100%;
       }
+      .modal{
+        max-width: 300px;
+      }
   }
+
+  @media (max-width: 1600px) {
+    .modal{
+        margin-top: 3rem;
+        padding: 2rem;
+        max-height: 700px;
+    }
+    .book-cover {
+        max-width: 65%;
+      }
+}
