@@ -3,15 +3,19 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import EmblaCarousel from '../EmblaCarousel'
 
+import Bookshelf from './BookShelf'
+
 import '../css/embla.css'
 import '../css/projects.css'
+import '../css/book.css'
+
 import BGIMG from '../assets/projects/cake-bg.jpeg'
 
-import bookcaseIMG from '../assets/projects/books/bookshelf.jpg'
 
 
 
 function Books() {
+  
   return (
     
     <div>
@@ -27,8 +31,9 @@ function Books() {
     </div>
      
       <h1 className='project-title'></h1>
-      <p className='project-bio'>I enjoy working through academic books. Hover over a book to see the cover or click on one to bring up more information.</p>
-      {/*<img className='case' src={bookcaseIMG}></img>*/}
+      {/*<p className='project-bio'>I enjoy working through academic books. Hover over a book to see the cover or click on one to bring up more information.</p>*/}
+      
+      <Bookshelf></Bookshelf>
 
     </div>
     

@@ -1,0 +1,166 @@
+ /**Styling for Bookcase**/
+ .case{
+    width: 110%;
+    margin-top: -7rem;
+    margin-bottom: 10rem;
+    display: block;
+    
+  }
+
+  .books-layer {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* ← tweak to match shelves */
+    padding-top: 4%;
+    padding-bottom: 3%;
+
+    /*pointer-events: none;*/
+  } 
+
+
+.bookshelf {
+    /*display: flex;
+    gap: 1rem;
+    perspective: 1000px;
+    width: 100%;
+    */
+    position: relative;
+    max-width: 800px; /* adjust to your image */
+    margin: 0 auto;
+  }
+  
+  .book {
+    /* max-width: 150px;
+    */
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    pointer-events: auto;
+  }
+  
+  
+  .book-inner { 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  /*.book:hover .book-inner {
+    transform: rotateY(180deg);
+  }*/
+  .book:hover .book-spine {
+    transform: scale(1.1);
+  }
+  
+  .book-spine{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    backface-visibility: hidden;
+    object-fit: cover;
+
+    
+  }
+  .book-cover {
+    max-width: 75%;
+    
+    
+    /*
+    object-fit: cover;
+    max-height: 80%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    */
+  }
+  
+  /*.book-cover {
+    transform: rotateY(180deg);
+  }*/
+
+  .badge {
+    /*position: absolute;
+    top: -8px;
+    right: -8px;
+    background: gold;
+    color: black;
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 50%;*/
+  }
+
+  .book.reading {
+    /*animation: glow 2s infinite alternate;*/
+  }
+  .book:nth-child(odd) {
+    transform: rotate(-1deg);
+  }
+  
+  .book:nth-child(even) {
+    transform: rotate(1deg);
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 5px rgba(0,255,150,0.3);
+    }
+    to {
+      box-shadow: 0 0 15px rgba(0,255,150,0.9);
+    }
+  }
+
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal {
+    background: white;
+    margin-top: 5rem;
+    padding: 2rem;
+    max-width: 500px;
+    max-height: 800px;
+    border-radius: 8px;
+    z-index: 11;
+  }
+  .book-details{
+    z-index: 12;
+    padding: .1rem;
+    color: black;
+  }
+  .details-button{
+    margin-top: .8rem;
+  }
+
+  @media (max-width: 768px) {
+      .case{
+        max-width: 100%;
+      }
+      .modal{
+        max-width: 300px;
+      }
+  }
+
+  @media (max-width: 1600px) {
+    .modal{
+        margin-top: 3rem;
+        padding: 2rem;
+        max-height: 700px;
+    }
+    .book-cover {
+        max-width: 65%;
+      }
+}
