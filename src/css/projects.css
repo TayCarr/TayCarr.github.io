@@ -1,8 +1,8 @@
 .project-bio {
     /*adjust as needed this will affect ALL p tags*/
-    padding-bottom: 3rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-bottom: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
     padding-top: 0rem;
   }
 
@@ -13,11 +13,15 @@
 }
 .project-text {
     /*adjust as needed this will affect ALL p tags*/
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     padding-left: 4rem;
     padding-right: 4rem;
     padding-top: 1rem;
   }
+.project-link{
+  padding-top: 1rem;
+
+}
 
 
 a {

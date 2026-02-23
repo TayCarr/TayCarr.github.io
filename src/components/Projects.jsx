@@ -148,6 +148,41 @@ const WIMAGELIST = [
    
 ];
 
+import B1 from '../assets/projects/books/w1.png'
+import B2 from '../assets/projects/books/w2.png'
+import B3 from '../assets/projects/books/w3.png'
+import B4 from '../assets/projects/books/w4.png'
+import B5 from '../assets/projects/books/w5.png'
+
+const LIBIMAGELIST = [
+    {
+        id : 1,
+        src: B1,
+        alt: "Image 1",
+    },
+    {
+        id : 2,
+        src: B2,
+        alt: "Image 2",
+    },
+    {
+        id : 3,
+        src: B3,
+        alt: "Image 3",
+    },
+    {
+        id : 4,
+        src: B4,
+        alt: "Image 4",
+    },
+    {
+        id : 5,
+        src: B5,
+        alt: "Image 5",
+    },
+   
+];
+
 const OPTIONS = { loop: true }
 const SLIDE_COUNT = 5
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
@@ -156,26 +191,31 @@ const Projects = () => {
     return(
         <div>
             <h1 className='project-title'>Project Showcase</h1>
-            <p className='project-bio'>Here you can find examples of projects that I have worked on in the past, or am currently working on. Clicking on a project will bring up further information on that project (give me a minute to do this refer to footer disclaimer). As I work on more personal projects the hope is to cycle out the school projects and build upon the things I learnt in doing those projects.</p>
+            <p className='project-bio'>Here you can find some examples of my projects! I hope to keep adding to the list of projects I am proud to show off, click on the project title to get a better look at each project :)</p>
             <div className='lumo-container'>
-            <li><Link to="/Projects/LumoLearn" >LumoLearn</Link></li>
+            <li className='project-link'><Link to="/Projects/LumoLearn" >LumoLearn</Link></li>
+            <p className='project-text'>My capstone project that I am so proud to be show off!</p>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='lumo-proj-car'/>
             </div>
             <div className='pixel-container'>
-            <li><Link to="/Projects/PixelClock" >Pixel Clock</Link></li>
+            <li className='project-link'><Link to="/Projects/PixelClock" >Pixel Clock</Link></li>
+            <p className='project-text'>My venture into the world of pixel art!</p>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={PIMAGELIST} className='pixel-proj-car'/>
             </div>
             <div className='diver-container'>
-                <li><Link to="/Projects/DiverGame" >Diver Game</Link></li>
+                <li className='project-link'><Link to="/Projects/DiverGame" >Diver Game</Link></li>
+                <p className='project-text'>The project from my favourite class I ever took, Computer Graphics!</p>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={SIMAGELIST} className='diver-proj-car'/>
             </div>
             <div className='site-container'>
-                <li><Link to="/Projects/PersonalSite" >This Site!</Link></li>
+                <li className='project-link'><Link to="/Projects/PersonalSite" >This Site!</Link></li>
+                <p className='project-text'>My ever evolving site, check out my report I update as I go!</p>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={WIMAGELIST} className='dog-proj-car'/>
             </div>
             <div className='read-container'>
-                <li><Link to="/Projects/Books" >Taylor's Library</Link></li>
+                <li className='project-link'><Link to="/Projects/Books" >Taylor's Library</Link></li>
                 <p className='project-text'>Check out the variety of books I have worked through (for fun)!</p>
+                <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={LIBIMAGELIST} className='book-proj-car'/>
             </div>
             
             

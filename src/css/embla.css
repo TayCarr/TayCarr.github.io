@@ -25,6 +25,9 @@ div[class$='-proj-car']{
     --slide-size: 100%; /*if too small the slides wont work*/
     --slide-width: 100%
   }
+  div[class$='book-proj-car']{
+    margin-bottom: 3rem;
+  }
   .embla__viewport {
     overflow: hidden;
   }
