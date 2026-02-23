@@ -71,7 +71,7 @@ body {
   color: #000;
   opacity: 0.85;
   height: 50px;
-  z-index: 12;
+  z-index: 1200;
 }
 
 .navbar-container {
