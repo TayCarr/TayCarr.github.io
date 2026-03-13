@@ -23,7 +23,6 @@
 
 }
 
-
 a {
     font-weight: 500;
     
@@ -139,6 +138,45 @@ a {
     width: 45%; 
     margin: '5px';
   }
+/**Styling for GlassHanded**/
+/*TODO maybe make the images all same height?*/
+.bio-paint{
+  padding-bottom: 3rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+
+}
+.bio-paint2{
+  padding-bottom: 3rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+
+}
+.paint-display {
+  /*
+  
+  
+  
+  */
+  height: 90rem;
+  overflow: hidden;
+   
+}
+.paint-display img{
+  /*
+  
+
+  */
+  
+  padding: 1rem;
+  object-fit: cover;
+  width: 18rem;
+  
+} 
+.cookie-display img{
+  width: 10%; 
+  margin: '5px';
+} 
 
 
   @media (max-width: 768px) {

@@ -6,6 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 import EmblaCarousel from '../EmblaCarousel'
 
 import '../css/embla.css'
+import BGIMG from '../assets/paint/images/lemon.png'
 
 import P1 from '../assets/paint/P1.jpeg'
 import P2 from '../assets/paint/P2.jpeg'
@@ -21,6 +22,16 @@ import P11 from '../assets/paint/P11.jpeg'
 import P12 from '../assets/paint/P12.jpeg'
 import P13 from '../assets/paint/P13.jpeg'
 import P14 from '../assets/paint/P14.jpeg'
+
+import PIXEL from '../assets/paint/images/pixel.jpg'
+import ROOSTER from '../assets/paint/images/rooster.png'
+import FRUIT from '../assets/paint/images/fruit.png'
+import PB from '../assets/paint/images/pb.png'
+import KNIGHT from '../assets/paint/images/knight.png'
+import MATCHA from '../assets/paint/images/matcha.png'
+import EBISU from '../assets/paint/images/ebisu.png'
+import SHORTBREAD from '../assets/paint/images/shortbread.png'
+import WINE from '../assets/paint/images/wine.png'
 
 const IMAGELIST = [
     {
@@ -102,12 +113,43 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 const Painting = () => {
     return(
         <div>
+            <div className="showcase-area" id="showcase" style={{ backgroundImage: `url(${BGIMG})`}}>
+                <div className="showcase-container">
+                    <h1 className="main-title" >GlassHanded</h1>
+                    <p className='main-desc'>My art side</p>
+                    <div className='btn-container'>
+                        <a href="https://etsy.com/shop/GlassHanded" target='_blank' className="btn btn-link">Visit my Etsy shop</a>
+                    </div>
+                </div>
+            </div>  
             <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='default' />
-        <h1>GlassHanded</h1>
         {/*can change the classname I had to add it in to get some of the 
             default page characteristics otherwise it was long and ugly */}
-        <p className='bio'>When lockdown was starting to get lifted I started to look for something that wasn’t just video games. Like everyone I was feeling not the greatest mentally and needed something to do with my time that wasn’t video games. I saw a friend of mine doing anime glass paintings, she had a few postings for commissions and of course I looked at her stuff and thought “ya I can do that”. So here I am years later still doing it! I have an Etsy shop where I go by GlassHanded. I take commissions here and there from people I know but I am somewhat selective as I don’t want this to become something I have to force myself to do just for money. For the most part I do what I want, post it for sale and if it sells cool, if not I love having paintings on display in my home. I have been a bit busy this past year but I am looking to set aside more time for myself to paint. I prefer manga panels over anime, and I have been challenging myself to try out other styles I wouldn’t normally. Junji Ito is and will forever be my favourite manga panels to translate onto glass. 
-</p>
+        <p className='bio-paint'>
+        I have always had a love for art and been fascinated with the amazing things people are able to create, but I often shied away from exploring my own creativity as I was not immediately the best and able to translate my thought to a physical form. During the oh so depressing time of COVID when video games were no longer itching my brain in a way I craved I decided to try my hand at some glass art (after seeing a friend start to sell her own pieces) and I have now been doing it for years. I prefer to just list pieces I have done for sale as to avoid that gun to your head work feeling you get with commissions (not always the case but I had a few really rough commission pieces that were torture). I have recently expanded into other crafty areas and painting on canvas too! I have hopes to refine my art skills and continually grow in this area as it really is such a special feeling having a stranger buy your artwork for display in their own home. 
+        </p>
+
+        <div className='paint-display'>
+        <img src={ROOSTER}></img>
+        <img src={EBISU}></img>
+        <img src={KNIGHT}></img>
+        <p className='bio-paint2'>My first love is manga/anime panels on glass but I am starting to branch out to other styles of art, usually in traditional tattoo territory. </p>
+        
+        
+        <img src={PIXEL}></img>
+        <img src={WINE}></img>
+        <img src={FRUIT}></img>
+        <p className='bio-paint2'>My branching out to new canvases, both digital and physical! I usually reach for acrylics and enamel paints maybe one day I will attempt oil... </p>
+
+    
+        <img src={MATCHA}></img>
+        <img src={SHORTBREAD}></img>
+        <img src={PB}></img>
+        <p className='bio-paint2'>I also really enjoy baking, it is a bit dangerous sometimes as I lack complete control over my sweet treat gremlin and do not want to jump up in dress sizes... I LOVE baking lactose free cheesecake in cupcake form!! </p>
+      </div>
+
+
+
         </div>
     );
 };
