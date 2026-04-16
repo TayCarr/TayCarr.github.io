@@ -194,7 +194,7 @@ const Projects = () => {
             <p className='project-bio'>Here you can find some examples of my projects! I hope to keep adding to the list of projects I am proud to show off, click on the project title to get a better look at each project :)</p>
             <div className='lumo-container'>
             <li className='project-link'><Link to="/Projects/LumoLearn" >LumoLearn</Link></li>
-            <p className='project-text'>My capstone project that I am so proud to be show off!</p>
+            <p className='project-text'>My capstone project that I am so proud to show off!</p>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='lumo-proj-car'/>
             </div>
             <div className='pixel-container'>
@@ -204,17 +204,17 @@ const Projects = () => {
             </div>
             <div className='diver-container'>
                 <li className='project-link'><Link to="/Projects/DiverGame" >Diver Game</Link></li>
-                <p className='project-text'>The project from my favourite class I ever took, Computer Graphics!</p>
+                <p className='project-text'>The project from my favourite class, Computer Graphics!</p>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={SIMAGELIST} className='diver-proj-car'/>
             </div>
             <div className='site-container'>
                 <li className='project-link'><Link to="/Projects/PersonalSite" >This Site!</Link></li>
-                <p className='project-text'>My ever evolving site, check out my report I update as I go!</p>
+                <p className='project-text'>Check out my document that I update as I go!</p>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={WIMAGELIST} className='dog-proj-car'/>
             </div>
             <div className='read-container'>
                 <li className='project-link'><Link to="/Projects/Books" >Taylor's Library</Link></li>
-                <p className='project-text'>Check out the variety of books I have worked through (for fun)!</p>
+                <p className='project-text'>I find joy in these educational books, here is what my bookcase looks like!</p>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={LIBIMAGELIST} className='book-proj-car'/>
             </div>
             

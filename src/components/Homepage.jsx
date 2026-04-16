@@ -73,7 +73,9 @@ function HomePage() {
       <EmblaCarousel slides={SLIDES} options={OPTIONS} imageList={IMAGELIST} className='default'/>
       <h1>Taylor Carreiro</h1>
       <div className='bio-box'>
-        <p className='bio-home'>While completing my Bachelor of Science I worked as a Sr. Dog Handler, but now with the completion of my degree I am ready to journey into the world of tech. I took a wide variety of topics both to get a taste of a variety of fields and to satisfy my hunger to learn. I love stepping out of my comfort zone in order to learn new things, my favourites were graph theory, algebra and computer graphics! BUT I fell in love with the entire process of developing my capstone project (LumoLearn). Working with a larger team with a variety of specialties was so much fun, I got to teach myself web development with the MERN stack but also got to learn about these other aspects that all came together to build our app. I look forward to my journey and I am excited to see where I will end. </p>
+        <p className='bio-home'>While completing my Bachelor's I worked as a Sr. Dog Handler, but I have said farewell to the pups as I am ready to put this degree to use! Over the years I took a variety of topics in order to get a feel for what is out there and because I truly do enjoy the challenge of learning new skills. My favourites topics are graph theory, algebra and computer graphics! BUT I fell in love with the entire process of developing my capstone project (LumoLearn). Working within a larger team with a variety of specialties was so much fun, I got to teach myself web development with the MERN stack but also got to learn about the other aspects that all came together to build our app.
+         </p>
+         <p className='bio-home'>This site serves as a home for my personal projects but this site itself is also continually changing. It will serve as a reflection of myself.</p>
       </div>
     </div>
         
